@@ -1,10 +1,10 @@
 import { User } from "../../models/user";
 import { HttpResponse } from "../protocols";
 
-export interface IGetUserContrller {
+export interface IGetUsersContrller {
   handle(): Promise<HttpResponse<User[]>>;
 }
 
-export interface IGetUserRepository {
+export interface IGetUsersRepository {
   getUsers(): Promise<User[]>;
 }
